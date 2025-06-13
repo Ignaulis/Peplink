@@ -20,8 +20,6 @@ export function useTranslate(text: string, from: "en" | "lt", to: "en" | "lt") {
           text,
         )}&langpair=${from}|${to}&de=random@example.com`;
 
-        console.log("Vertimo URL:", url);
-
         const res = await fetch(url);
         if (!res.ok) throw new Error("Vertimo klaida");
 
