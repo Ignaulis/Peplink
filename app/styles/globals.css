@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: var(--font-karla), sans-serif;
+    background-color: #F0F2EF;
+    background-image: url('/svgs/blue.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* inputai custom */
+.custom-input {
+    @apply p-2 rounded w-full outline-0 bg-blue-100;
+}
